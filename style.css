@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #bfdbfe;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(120deg,#2563eb,#1e40af);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: fade 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 700px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background: white;
+    color: #2563eb;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #dbeafe;
+}
+
+/* HEADER */
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+/* GRID */
+.features, .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+/* CARD */
+.card, .about-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover, .about-box:hover {
+    transform: translateY(-10px);
+    background: #eff6ff;
+}
+
+/* ANIMASI */
+@keyframes fade {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* TASK PAGE */
+
+.task-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 80px;
+}
+
+.task-form, .task-list {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.task-form h3, .task-list h3 {
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+.task-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card .btn {
+    margin-top: 25px;  
+    align-self: center;
+}
+/* SCHEDULE */
+.schedule {
+    padding: 40px 80px;
+    display: grid;
+    gap: 20px;
+}
+
+.schedule-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+/* REMINDER */
+.reminder {
+    padding: 40px 80px;
+    display: grid;
+    gap: 20px;
+}
+
+.reminder-item {
+    background: #fff7ed;
+    padding: 20px;
+    border-left: 6px solid #fb923c;
+    border-radius: 10px;
+}
+
+/* PROGRESS */
+.progress {
+    padding: 40px 80px;
+    display: grid;
+    gap: 30px;
+}
+
+.progress-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.bar {
+    background: #e5e7eb;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.bar div {
+    height: 100%;
+    background: #2563eb;
+}
